@@ -42,6 +42,8 @@
 
 @property (strong, nonatomic) NSArray* intervals;
 
+@property (strong, nonatomic) UILabel* counterViewLabel;
+
 - (void)start;
 - (void)stop;
 - (void)resume;

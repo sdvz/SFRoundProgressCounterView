@@ -93,9 +93,12 @@
     self.counterLabel.adjustsFontSizeToFitWidth = YES;
     [self.counterLabel updateApperance];
     
-    [self addSubview: self.counterLabel];
-    [self.counterLabel setCenter:center];
-    
+    //[self addSubview: self.counterLabel];
+    //[self.counterLabel setCenter:center];
+     self.counterViewLabel.frame = CGRectMake(0, 0, innerWhiteCircleDiameter, diameter/2.0);
+    [self addSubview:self.counterViewLabel];
+    [self.counterViewLabel setCenter:center];
+    self.counterViewLabel.textAlignment = NSTextAlignmentCenter;
 }
 
 - (void) setup
@@ -126,6 +129,9 @@
     self.counterLabel = [[SFCounterLabel alloc] init];
     self.counterLabel.countDirection = kCountDirectionDown;
     self.counterLabel.countdownDelegate = self;
+    
+    //sage counterlabelview
+    self.counterViewLabel = [[UILabel alloc] init];
 }
 
 #pragma mark - setting intervals
