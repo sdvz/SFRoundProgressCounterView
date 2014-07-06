@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   spec.authors			= 'Thomas Winkler'
   spec.homepage			= 'https://github.com/simpliflow/SFRoundProgressCounterView'
   spec.source_files 		= 'SFRoundProgressCounterView/*.{h,m}'  
-  spec.source			= { :git => 'https://github.com/simpliflow/SFRoundProgressCounterView.git', :tag => 'v0.0.4' }
+  spec.source			= { :git => 'https://github.com/sdvz/SFRoundProgressCounterView.git' }
   spec.framework  = 'UIKit'
   spec.requires_arc = true
 
